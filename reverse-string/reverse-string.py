@@ -9,7 +9,6 @@ class Solution:
         #     s[j] = tmp;
         #     i+=1;
         #     j-=1;
-        print(s)
         """
         Do not return anything, modify s in-place instead.
         """
