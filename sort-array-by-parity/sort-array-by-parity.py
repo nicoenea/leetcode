@@ -9,5 +9,4 @@ class Solution:
                 tempOdd.append(nums[num])
         tempEven.extend(tempOdd)
         nums[:] = tempEven
-        print(nums)
         return nums
