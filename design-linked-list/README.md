@@ -1,3 +1,4 @@
+[Discussion Post (created on 28/9/2021 at 23:7)](https://leetcode.com/problems/design-linked-list/discuss/1545634/Explained-Implementation-(Python3))  
 <h2>707. Design Linked List</h2><h3>Medium</h3><hr><div><p>Design your implementation of the linked list. You can choose to use a singly or doubly linked list.<br>
 A node in a singly linked list should have two attributes: <code>val</code> and <code>next</code>. <code>val</code> is the value of the current node, and <code>next</code> is a pointer/reference to the next node.<br>
 If you want to use the doubly linked list, you will need one more attribute <code>prev</code> to indicate the previous node in the linked list. Assume all nodes in the linked list are <strong>0-indexed</strong>.</p>
