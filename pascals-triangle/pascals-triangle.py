@@ -1,6 +1,5 @@
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
-        
         # initialize Triangle with the number of rows
         pTriangle = [0] * numRows
         
