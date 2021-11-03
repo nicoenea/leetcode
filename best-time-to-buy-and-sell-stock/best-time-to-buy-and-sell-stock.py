@@ -1,15 +1,15 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        if not prices:
-            return 0
-        
-        # We need to know that the maxProfit if selling on any i-th day.
-        maxProfit = 0
-        # There might also be a scenario where stock bought on i-th day is                  minimum and we sell on another day
+        """
+        Essentially what we want to do is get the profit onn any given i-th and save it, 
+            until we reach the end of our list
+        """
+        # keep the minPurchase, in case the stock bought on i-th day is minimum and sold later
         minPurchase = prices[0]
-        for i in range(1, len(prices)):	#iterate through list index
-            print(i)
-            maxProfit = max(maxProfit, prices[i] - minPurchase)
-            minPurchase = min(minPurchase, prices[i])
-        return maxProfit
+        # keep track of maximum Profit
+        profit = 0
+        for i in prices: # iterate through prices
+            profit = max(profit, i - minPurchase) 
+            minPurchase = min(minPurchase, i) 
+        return profit
         
