@@ -3,6 +3,6 @@ class Solution:
         
         # use replace() function
         
-        address = address.replace('.', '[.]')
+        return address.replace('.', '[.]')
         
-        return address
+       
