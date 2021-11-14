@@ -18,7 +18,7 @@ class Solution:
         """
         slow = fast = head # 1 
         
-        while fast:
+        while fast: 
             
             fast = fast.next # 2
             if fast: 
