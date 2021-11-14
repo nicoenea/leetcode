@@ -8,4 +8,5 @@ class Solution:
                 currSum = 0
             currSum += num
             maxSub = max(maxSub, currSum)
+            
         return maxSub
