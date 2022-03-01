@@ -3,12 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        print(nums1)
-        count=0
-        count2 = 0
-        while count < m+n:
-            if count >= m:
-                nums1[count] = nums2[count2]
-                count2+=1
-            count+=1
+        for index in range(0, n):
+            nums1[index + m] = nums2[index]
+            
         nums1.sort()
