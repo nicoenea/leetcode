@@ -1,13 +1,16 @@
 class Solution:
     def minProductSum(self, nums1: List[int], nums2: List[int]) -> int:
-        productSum = 0
+        # Sort nums1 in ascending order, and nums2 in
+        # descending order.
+        nums1.sort()
+        nums2.sort(reverse=True)
         
-        nums1 = sorted(nums1)
-        nums2 = sorted(nums2, reverse=True)
+        # Initialize sum as 0.
+        ans = 0
         
-        for num in range(0, len(nums1)):
-            productSum += nums1[num] * nums2[num]
-            
-        return productSum
-            
-            
+        # Iterate over two sorted arrays and calculate the 
+        # cumulative product sum. 
+        for num1, num2 in zip(nums1, nums2):
+            ans += num1 * num2
+
+        return ans
